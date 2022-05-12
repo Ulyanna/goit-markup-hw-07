@@ -2,7 +2,7 @@
 .about-us-section {
   padding-top: 0;
 }
-.about-us-list {
+.about-us-section__list {
   display: flex;
   flex-wrap: wrap;
 
@@ -10,29 +10,30 @@
   margin-bottom: calc(-1 * var(--card-set-gap));
 }
 
-.about-us-item {
+.about-us-section__item {
   position: relative;
 
   flex-basis: calc(100% / 3 - var(--card-set-gap));
   margin-left: var(--card-set-gap);
   margin-bottom: var(--card-set-gap);
 }
-.about-us-item-thumb {
+.about-us-section__thumb {
   position: relative;
   display: flex;
   align-items: center;
-}
-.about-us-item-thumb::before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 70px;
 
-  background-color: rgba(47, 48, 58, 0.8);
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+
+    background-color: rgba(47, 48, 58, 0.8);
+  }
 }
 
-.about-us-item-text {
+.about-us-section__text {
   position: absolute;
   width: 100%;
 

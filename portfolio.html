@@ -21,33 +21,37 @@
     <header class="header">
       <!--Навигация в шапке-->
       <div class="container header-content">
-        <nav class="navigation header-content">
-          <a href="./index.html" class="logo text"><span class="logo-first">Web</span>Studio</a>
+        <nav class="naw">
+          <a href="./index.html" class="logo naw__logo logo--dark text"
+            ><span class="naw__logo-first">Web</span>Studio</a
+          >
           <ul class="naw-list">
-            <li class="naw-list-item">
-              <a href="./index.html" class="link text">Студия</a>
+            <li class="naw-list__item">
+              <a href="./index.html" class="naw-list__link text">Студия</a>
             </li>
             <li class="naw-list-item">
-              <a href="./portfolio.html" target="_blank" class="link text current">Портфолио</a>
+              <a href="./portfolio.html" target="_blank" class="naw-list__link text current"
+                >Портфолио</a
+              >
             </li>
-            <li class="naw-list-item"><a href="" class="link text list">Контакты</a></li>
+            <li class="naw-list-item"><a href="" class="naw-list__link text">Контакты</a></li>
           </ul>
         </nav>
 
         <!--Блок контакты-->
 
         <ul class="contacts-block">
-          <li class="contacts-block-item">
-            <a href="mailto:info@devstudio.com" class="link text">
-              <svg class="contacts-block-icon" width="16px" height="12px">
+          <li class="contacts-block__item">
+            <a href="mailto:info@devstudio.com" class="contacts-block__link text">
+              <svg class="contacts-block__icon" width="16px" height="12px">
                 <use href="./images/sprite.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="contacts-block-item">
-            <a href="tel:+380961111111" class="link text"
-              ><svg class="contacts-block-icon" width="10px" height="16px">
+          <li class="contacts-block__item">
+            <a href="tel:+380961111111" class="contacts-block__link text"
+              ><svg class="contacts-block__icon" width="10px" height="16px">
                 <use href="./images/sprite.svg#icon-mobile"></use>
               </svg>
               +38 096 111 11 11
@@ -62,227 +66,219 @@
         <!--Скрытый заголовок-->
         <!-- <h1>Примеры работ</h1> -->
         <div class="container">
-          <ul class="filters-list">
-            <li class="filter-item">
-              <button type="button" class="button-filter current">Все</button>
+          <ul class="filters filters-list">
+            <li class="filters-list__item">
+              <button type="button" class="filters-list__btn current">Все</button>
             </li>
-            <li class="filter-item">
-              <button type="button" class="button-filter">Веб-сайт</button>
+            <li class="filters-list__item">
+              <button type="button" class="filters-list__btn">Веб-сайт</button>
             </li>
-            <li class="filter-item">
-              <button type="button" class="button-filter">Приложения</button>
+            <li class="filters-list__item">
+              <button type="button" class="filters-list__btn">Приложения</button>
             </li>
-            <li class="filter-item">
-              <button type="button" class="button-filter">Дизайн</button>
+            <li class="filters-list__item">
+              <button type="button" class="filters-list__btn">Дизайн</button>
             </li>
-            <li class="filter-item">
-              <button type="button" class="button-filter">Маркетинг</button>
+            <li class="filters-list__item">
+              <button type="button" class="filters-list__btn">Маркетинг</button>
             </li>
           </ul>
           <!-- Примеры работ -->
           <ul class="works-list">
-            <li class="works-list-item">
-              <a href="" class="text">
-                <div class="works-list-thumb">
+            <li class="works-list__item">
+              <a href="" class="works-list__link text">
+                <div class="works-list__thumb">
                   <img
                     src="./images-portfolio/img-ex-1.jpg"
                     alt="Ноутбук"
                     width="370"
                     height="294"
                   />
-                  <p class="works-list-thumb-text">
+                  <p class="works-list__thumb-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
                     или частном лице.
                   </p>
                 </div>
-                <div class="card-box">
-                  <h2 class="works-title">Технокряк</h2>
-                  <p class="works-subtitle">Веб-сайт</p>
+                <div class="works-list__card-box">
+                  <h2 class="works-list__title">Технокряк</h2>
+                  <p class="works-list__subtitle">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="works-list-item">
-              <a href="" class="text">
-                <div class="works-list-thumb">
+            <li class="works-list__item">
+              <a href="" class="works-list__link text">
+                <div class="works-list__thumb">
                   <img
                     src="./images-portfolio/img-ex-2.jpg"
                     alt="Игра в футбол"
                     width="370"
                     height="294"
                   />
-                  <div class="works-list-thumb-text-box">
-                    <p class="works-list-thumb-text">
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                      компании или частном лице.
-                    </p>
-                  </div>
+
+                  <p class="works-list__thumb-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
                 </div>
-                <div class="card-box">
-                  <h2 lang="en" class="works-title">Постер New Orlean vs Golden Star</h2>
-                  <p class="works-subtitle">Постер</p>
+                <div class="works-list__card-box">
+                  <h2 lang="en" class="works-list__title">Постер New Orlean vs Golden Star</h2>
+                  <p class="works-list__subtitle">Постер</p>
                 </div>
               </a>
             </li>
-            <li class="works-list-item">
-              <a href="" class="text">
-                <div class="works-list-thumb">
+            <li class="works-list__item">
+              <a href="" class="works-list__link text">
+                <div class="works-list__thumb">
                   <img
                     src="./images-portfolio/img-ex-3.jpg"
                     alt="Лого Ресторана"
                     width="370"
                     height="294"
                   />
-                  <div class="works-list-thumb-text-box">
-                    <p class="works-list-thumb-text">
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                      компании или частном лице.
-                    </p>
-                  </div>
+
+                  <p class="works-list__thumb-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
                 </div>
-                <div class="card-box">
-                  <h2 lang="en" class="works-title">Ресторан Seafood</h2>
-                  <p class="works-subtitle">Приложение</p>
+                <div class="works-list__card-box">
+                  <h2 lang="en" class="works-list__title">Ресторан Seafood</h2>
+                  <p class="works-list__subtitle">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="works-list-item">
-              <a href="" class="text">
-                <div class="works-list-thumb">
+            <li class="works-list__item">
+              <a href="" class="works-list__link text">
+                <div class="works-list__thumb">
                   <img
                     src="./images-portfolio/img-ex-4.jpg"
                     alt="Наушники"
                     width="370"
                     height="294"
                   />
-                  <div class="works-list-thumb-text-box">
-                    <p class="works-list-thumb-text">
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                      компании или частном лице.
-                    </p>
-                  </div>
+
+                  <p class="works-list__thumb-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
                 </div>
-                <div class="card-box">
-                  <h2 lang="en" class="works-title">Проект Prime</h2>
-                  <p class="works-subtitle">Маркетинг</p>
+                <div class="works-list__card-box">
+                  <h2 lang="en" class="works-list__title">Проект Prime</h2>
+                  <p class="works-list__subtitle">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="works-list-item">
-              <a href="" class="text">
-                <div class="works-list-thumb">
+            <li class="works-list__item">
+              <a href="" class="works-list__link text">
+                <div class="works-list__thumb">
                   <img
                     src="./images-portfolio/img-ex-5.jpg"
                     alt="Коробки"
                     width="370"
                     height="294"
                   />
-                  <div class="works-list-thumb-text-box">
-                    <p class="works-list-thumb-text">
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                      компании или частном лице.
-                    </p>
-                  </div>
+
+                  <p class="works-list__thumb-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
                 </div>
-                <div class="card-box">
-                  <h2 lang="en" class="works-title">Проект Boxes</h2>
-                  <p class="works-subtitle">Приложение</p>
+                <div class="works-list__card-box">
+                  <h2 lang="en" class="works-list__title">Проект Boxes</h2>
+                  <p class="works-list__subtitle">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="works-list-item">
-              <a href="" class="text">
-                <div class="works-list-thumb">
+            <li class="works-list__item">
+              <a href="" class="works-list__link text">
+                <div class="works-list__thumb">
                   <img
                     src="./images-portfolio/img-ex-6.jpg"
                     alt="Монитор"
                     width="370"
                     height="294"
                   />
-                  <div class="works-list-thumb-text-box">
-                    <p class="works-list-thumb-text">
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                      компании или частном лице.
-                    </p>
-                  </div>
+
+                  <p class="works-list__thumb-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
                 </div>
-                <div class="card-box">
-                  <h2 lang="en" class="works-title">Inspiration has no Borders</h2>
-                  <p class="works-subtitle">Веб-сайт</p>
+                <div class="works-list__card-box">
+                  <h2 lang="en" class="works-list__title">Inspiration has no Borders</h2>
+                  <p class="works-list__subtitle">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="works-list-item">
-              <a href="" class="text">
-                <div class="works-list-thumb">
+            <li class="works-list__item">
+              <a href="" class="works-list__link text">
+                <div class="works-list__thumb">
                   <img
                     src="./images-portfolio/img-ex-7.jpg"
                     alt="Разворот кники"
                     width="370"
                     height="294"
                   />
-                  <div class="works-list-thumb-text-box">
-                    <p class="works-list-thumb-text">
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                      компании или частном лице.
-                    </p>
-                  </div>
+
+                  <p class="works-list__thumb-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
                 </div>
-                <div class="card-box">
-                  <h2 lang="en" class="works-title">Издание Limited Edition</h2>
-                  <p class="works-subtitle">Дизайн</p>
+                <div class="works-list__card-box">
+                  <h2 lang="en" class="works-list__title">Издание Limited Edition</h2>
+                  <p class="works-list__subtitle">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="works-list-item">
-              <a href="" class="text">
-                <div class="works-list-thumb">
+            <li class="works-list__item">
+              <a href="" class="works-list__link text">
+                <div class="works-list__thumb">
                   <img
                     src="./images-portfolio/img-ex-8.jpg"
                     alt="Бирка-ценник"
                     width="370"
                     height="294"
                   />
-                  <div class="works-list-thumb-text-box">
-                    <p class="works-list-thumb-text">
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                      компании или частном лице.
-                    </p>
-                  </div>
+
+                  <p class="works-list__thumb-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
                 </div>
-                <div class="card-box">
-                  <h2 lang="en" class="works-title">Проект LAB</h2>
-                  <p class="works-subtitle">Маркетинг</p>
+                <div class="works-list__card-box">
+                  <h2 lang="en" class="works-list__title">Проект LAB</h2>
+                  <p class="works-list__subtitle">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="works-list-item">
-              <a href="" class="text">
-                <div class="works-list-thumb">
+            <li class="works-list__item">
+              <a href="" class="works-list__link text">
+                <div class="works-list__thumb">
                   <img
                     src="./images-portfolio/img-ex-9.jpg"
                     alt="Печатание на ноутбуке"
                     width="370"
                     height="294"
                   />
-                  <div class="works-list-thumb-text-box">
-                    <p class="works-list-thumb-text">
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                      компании или частном лице.
-                    </p>
-                  </div>
+
+                  <p class="works-list__thumb-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
                 </div>
-                <div class="card-box">
-                  <h2 lang="en" class="works-title">Growing Business</h2>
-                  <p class="works-subtitle">Приложение</p>
+                <div class="works-list__card-box">
+                  <h2 lang="en" class="works-list__title">Growing Business</h2>
+                  <p class="works-list__subtitle">Приложение</p>
                 </div>
               </a>
             </li>
@@ -293,51 +289,59 @@
     <!--Футер-->
     <footer class="footer">
       <div class="container footer-container">
-        <div class="footer-box">
-          <a href="" class="logo-footer text"> <span class="logo-footer-first">Web</span>Studio </a>
+        <div class="footer__box">
+          <a href="" class="logo footer__logo logo--light text">
+            <span class="footer__logo-first">Web</span>Studio
+          </a>
 
-          <address>
-            <ul class="contacts-footer">
-              <li><a href="" class="link-address text"> г. Киев, пр-т Леси Украинки, 26,</a></li>
-              <li>
-                <a href="mailto:info@example.com" class="link-mail-footer link text"
+          <address class="contacts-footer">
+            <ul class="contacts-footer__list">
+              <li class="contacts-footer__item">
+                <a href="" class="contacts-footer__link-address text">
+                  г. Киев, пр-т Леси Украинки, 26,</a
+                >
+              </li>
+              <li class="contacts-footer__item">
+                <a href="mailto:info@example.com" class="contacts-footer__link-mail text"
                   >info@example.com</a
                 >
               </li>
-              <li>
-                <a href="tel:+380991111111" class="link-tel-footer link text">+38 099 111 11 11</a>
+              <li class="contacts-footer__item">
+                <a href="tel:+380991111111" class="contacts-footer__link-tel text"
+                  >+38 099 111 11 11</a
+                >
               </li>
             </ul>
           </address>
         </div>
 
-        <div class="footer-social-box">
-          <p class="footer-text">Присоединяйтесь</p>
-          <ul class="footer-social-list">
-            <li class="footer-social-item">
-              <a href="">
-                <svg class="icon-footer" width="44" height="44">
+        <div class="social-box footer-social-box">
+          <p class="footer-social-box__text">Присоединяйтесь</p>
+          <ul class="footer-social-box__list">
+            <li class="footer-social-box__item">
+              <a href="" class="footer-social-box__link">
+                <svg class="footer-social-box__icon" width="44" height="44">
                   <use href="./images/sprite.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-social-item">
-              <a href="">
-                <svg class="icon-footer" width="44" height="44">
+            <li class="footer-social-box__item">
+              <a href="" class="footer-social-box__link">
+                <svg class="footer-social-box__icon" width="44" height="44">
                   <use href="./images/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-social-item">
-              <a href="">
-                <svg class="icon-footer" width="44" height="44">
+            <li class="footer-social-box__item">
+              <a href="" class="footer-social-box__link">
+                <svg class="footer-social-box__icon" width="44" height="44">
                   <use href="./images/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-social-item">
-              <a href="">
-                <svg class="icon-footer" width="44" height="44">
+            <li class="ffooter-social-box__item">
+              <a href="" class="footer-social-box__link">
+                <svg class="footer-social-box__icon" width="44" height="44">
                   <use href="./images/sprite.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -345,16 +349,16 @@
           </ul>
         </div>
         <div class="footer-form-box">
-          <form>
-            <p class="footer-form-text"><label for="mail">Подпишитесь на рассылку</label></p>
+          <form class="fotter-form-box__form">
+            <p class="footer-form-box__text"><label for="mail">Подпишитесь на рассылку</label></p>
             <input
               type="email"
               name="email"
               id="mail"
               placeholder="E-mail"
-              class="footer-form-input"
+              class="footer-form-box__input"
             />
-            <button type="submit" class="footer-form-btn">Подписаться</button>
+            <button type="submit" class="footer-form-box__btn">Подписаться</button>
           </form>
         </div>
       </div>

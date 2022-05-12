@@ -1,17 +1,19 @@
 /*-------------- Наши клиенты --------------------------------*/
-.our-clients-list {
+.section-clients__list {
   display: flex;
   flex-wrap: wrap;
   margin-right: calc(-1 * var(--card-set-gap));
 }
-.our-clients-item {
+.section-clients__item {
   flex-basis: calc(100% / 6 - var(--card-set-gap));
   margin-right: var(--card-set-gap);
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
-.our-clients-item:last-child {
-  margin-right: 0;
-}
-.our-clients-item > a {
+
+.section-clients__link {
   display: flex;
   width: 170px;
   height: 92px;
@@ -24,12 +26,14 @@
 
   color: var(--icon-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+  }
 }
-.our-clients-item > a:hover,
-.our-clients-item > a:focus {
-  border: 1px solid var(--accent-color);
-  color: var(--accent-color);
-}
-.our-clients-icon {
+
+.section-clients__icon {
   fill: currentColor;
 }
